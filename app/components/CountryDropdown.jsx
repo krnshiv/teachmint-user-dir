@@ -34,7 +34,7 @@ const CountryDropdown = ({ onSelect }) => {
 
   return (
     
-      <select className='flex text-white hover:bg-blue-600 hover:text-white cursor-pointer font-semibold bg-blue-600 text-[12px] p-1 max-w-[9rem] border-b-[1px] hover:bg-white hover:text-blue-700  border-white' name='country' id="country" value={selectedCountry} onChange={handleCountryChange}>
+      <select className='flex text-white cursor-pointer font-semibold bg-blue-600 text-[12px] p-1 max-w-[9rem] border-b-[1px] hover:bg-white hover:text-blue-700  border-white' name='country' id="country" value={selectedCountry} onChange={handleCountryChange}>
         <option value={selectedCountry}>{label}</option>        
         {countries.map((country, index) => (
           <option key={index} value={country}>
